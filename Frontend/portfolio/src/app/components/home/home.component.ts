@@ -15,8 +15,8 @@ export class HomeComponent {
   ngAfterViewInit() {
      setTimeout(() => {
     new TypeIt("#type-target", {
-      strings: ["I'm a Full Stack Developer",
-        "I'm an Angular Expert",
+      strings: [
+        "I'm an Angular Developer", "I'm an Web Developer",
         "I'm a Node.js Developer",
         "I'm a Problem Solver",
         "I'm a Team Player",

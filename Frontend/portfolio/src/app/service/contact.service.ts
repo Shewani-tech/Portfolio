@@ -8,8 +8,6 @@ export class ContactService {
   constructor(private http: HttpClient) {}
 
   sendMessage(data: any) {
-    console.log('data is',data);
-    
     return this.http.post(this.API, data);
   }
 }

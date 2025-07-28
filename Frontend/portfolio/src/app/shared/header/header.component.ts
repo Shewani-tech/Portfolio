@@ -9,15 +9,5 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
- constructor() {
-    
-  }
 
-  languageChange($event:any){
-    
-  }
-
-  ngOnInit(): void {
-  
-}
 }
