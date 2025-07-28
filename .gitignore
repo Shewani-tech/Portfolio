@@ -1,0 +1,73 @@
+# === Angular (Frontend) ===
+
+# Compiled output
+/frontend/dist
+/frontend/tmp
+/frontend/out-tsc
+/frontend/.angular/cache
+
+# Node modules
+/frontend/node_modules/
+
+# Environment files
+/frontend/.env
+
+# Logs and debug
+/frontend/npm-debug.log
+/frontend/yarn-error.log
+
+# IDEs and editors
+/frontend/.idea/
+frontend/.project
+/frontend/.classpath
+/frontend/.c9/
+*.launch
+/frontend/.settings/
+*.sublime-workspace
+
+# VSCode settings
+/frontend/.vscode/*
+!/frontend/.vscode/settings.json
+!/frontend/.vscode/tasks.json
+!/frontend/.vscode/launch.json
+!/frontend/.vscode/extensions.json
+
+# === Express (Backend) ===
+
+# Node modules
+/backend/node_modules/
+
+
+# env
+/backend/env
+
+# Logs
+/backend/logs
+/backend/*.log
+backend/npm-debug.log
+
+# Environment files
+/backend/.env
+
+# Compiled output (if using TypeScript in backend)
+backend/dist/
+backend/build/
+backend/tmp/
+
+# === Root Level Shared ===
+
+# Global node_modules
+node_modules/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Test coverage and other temp files
+/coverage
+/libpeerconnection.log
+testem.log
+/connect.lock
+.sass-cache/
+.typings
+.history/
