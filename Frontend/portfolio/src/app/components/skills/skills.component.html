@@ -1,0 +1,56 @@
+<section id="skills" style="scroll-margin-top: 70px;">
+  <div class="container">
+<h3 class="text-decoration-underline" style="font-weight: bolder;">Skills</h3>
+    <!-- <span class="bar-title mb-5"></span> -->
+
+    <div class="row mt-2">
+      <!-- Technologies -->
+      <div class="col-lg-4" >
+        <h5><strong>Technologies</strong></h5>
+        <div class="skillgraph"  data-aos="fade-down" data-aos-delay="300">
+          <div class="row skill-row" *ngFor="let technologie of mySkills.technologies">
+            <div class="label d-flex flex-row">
+              <span class="skillLabel">{{technologie.name}}</span>
+              <span class="skill-percent">{{technologie.percent}}%</span>
+            </div>
+            <span class="skillData-Wrapper">
+              <span [ngClass]="technologie.remark" class="skillData bg-rust"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="col-lg-4" data-aos="fade-down" data-aos-delay="300">
+        <h5><strong>Tools</strong></h5>
+        <div class="skillgraph panel panel-default">
+          <div class="row skill-row" *ngFor="let tool of mySkills.tools">
+            <div class="label d-flex flex-row">
+              <span class="skillLabel">{{tool.name}}</span>
+              <span class="skill-percent">{{tool.percent}}%</span>
+            </div>
+            <span class="skillData-Wrapper">
+              <span [ngClass]="tool.remark" class="skillData bg-rust"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Methodologies -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <h5><strong>Methodologie</strong></h5>
+        <div class="skillgraph panel panel-default">
+          <div class="row skill-row" *ngFor="let methodologie of mySkills.methodologies">
+            <div class="label d-flex flex-row">
+              <span class="skillLabel">{{methodologie.name}}</span>
+              <span class="skill-percent">{{methodologie.percent}}%</span>
+            </div>
+            <span class="skillData-Wrapper">
+              <span [ngClass]="methodologie.remark" class="skillData bg-rust"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- ✅ Properly closed container -->
+</section>
