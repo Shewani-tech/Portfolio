@@ -4,11 +4,13 @@
 .skillData-Wrapper {
     width: 100%;
 }
-.skills{
+#skills{
+    margin-top: 40px;
    width: 100%;
-    height: 100vh;
-    background: top center;
+   // height: 100vh;
+    // background: top center;
     background-size: cover;
+        background: #f9f9f9;
 }
 
 .skillgraph {
@@ -75,4 +77,9 @@
 
 a{
   text-decoration: none;
+}
+h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
 }

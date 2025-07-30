@@ -1,6 +1,6 @@
 <section id="project" style="scroll-margin-top: 70px;">
     <div class="container">
-        <h3><strong class="text-decoration-underline" style="font-weight: bolder;">Projects</strong></h3>
+ <h3 class="projects"><strong class="text-decoration-underline" style="font-weight: bolder;">Project</strong></h3>
         <span class="bar-title mb-5"></span>
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-4" *ngFor="let project of projects" data-aos="flip-up">
@@ -11,20 +11,20 @@
                         <mat-card-subtitle>{{ project.subtitle }}</mat-card-subtitle>
                     </mat-card-header>
 
-                    <img mat-card-image [src]="project.image" class="fixed-image" alt="{{ project.title }}" />
+                    <img mat-card-image [src]="project.image" class="fixed-image" alt="{{ project.title }}" (click)="openPortfolio(project.websiteLink)" style="cursor:pointer;" />
 
                     <mat-card-content>
-                        <h3><strong>Technologies: <h4>{{project.technologies}}</h4></strong></h3>
+                        <h4><strong>Technologies:</strong> <p>{{project.technologies}}</p></h4>
 
-                        <h3 *ngIf="project.showDescription"><strong>Description:</strong>
+                        <h4 *ngIf="project.showDescription"><strong>Description:</strong>
                             <p>{{ project.description }}</p>
-                        </h3>
+                        </h4>
 
                     </mat-card-content>
 
                     <mat-card-actions>
                         <!-- 🔹 Source button styled with mat-raised-button -->
-                        <a mat-raised-button color="primary" href="https://github.com/Shewani-tech/Portfolio"
+                        <a mat-raised-button color="primary" [href]="project.sourceUrl" 
                             target="_blank" rel="noopener noreferrer">
                             <mat-icon>code</mat-icon>&nbsp; Source
                         </a>
@@ -33,6 +33,10 @@
                         <button mat-raised-button color="accent" (click)="toggleDescription(project)">
                             <mat-icon>{{ project.showDescription ? 'visibility_off' : 'visibility' }}</mat-icon>&nbsp;
                             {{ project.showDescription ? 'Hide Description' : 'Description' }}
+                        </button>
+                        <button mat-raised-button color="accent" (click)="openPortfolio(project.websiteLink)">
+                            <mat-icon>language</mat-icon>&nbsp;
+                            Website
                         </button>
                     </mat-card-actions>
                 </mat-card>

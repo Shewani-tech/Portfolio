@@ -7,11 +7,12 @@
   background-size: cover;
 }
 #project{
-    margin-top:50px;
+    
      width: 100%;
-    height: 80vh;
+    //height: 80vh;
     background: top center;
     background-size: cover;
+   margin-top:40px;
 }
 mat-card-actions a,
 mat-card-actions button {
@@ -38,5 +39,10 @@ mat-icon{
   object-fit: cover;
   width: 100%; 
   border-radius: 4px;
+}
+.projects {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
 }
 
